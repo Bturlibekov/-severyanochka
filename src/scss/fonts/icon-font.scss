@@ -1,0 +1,107 @@
+@font-face {
+  font-family: 'icon';
+  src: url('../fonts/icon-font.woff') format('trutype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before {
+  content: "\e914";
+}
+
+.icon-alert-triangle:before {
+  content: "\e900";
+}
+
+.icon-bag:before {
+  content: "\e901";
+}
+
+.icon-calendar:before {
+  content: "\e902";
+}
+
+.icon-call:before {
+  content: "\e903";
+}
+
+.icon-cart:before {
+  content: "\e904";
+}
+
+.icon-check:before {
+  content: "\e905";
+}
+
+.icon-check-circle:before {
+  content: "\e906";
+}
+
+.icon-chevron:before {
+  content: "\e907";
+}
+
+.icon-clock:before {
+  content: "\e908";
+}
+
+.icon-cube:before {
+  content: "\e909";
+}
+
+.icon-delivery:before {
+  content: "\e90a";
+}
+
+.icon-eye:before {
+  content: "\e90b";
+}
+
+.icon-eye-off:before {
+  content: "\e90c";
+}
+
+.icon-heart:before {
+  content: "\e90d";
+}
+
+.icon-home:before {
+  content: "\e90e";
+}
+
+.icon-minus:before {
+  content: "\e90f";
+}
+
+.icon-plus:before {
+  content: "\e910";
+}
+
+.icon-rotate:before {
+  content: "\e911";
+}
+
+.icon-share:before {
+  content: "\e912";
+}
+
+.icon-star:before {
+  content: "\e913";
+}

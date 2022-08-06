@@ -1,0 +1,153 @@
+@import './base/vars';
+@import './base/mixins';
+
+.footer {
+    background-color: #F9F4E2;
+}
+
+.footer__body {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px 30px 0px;
+}
+
+.footer__navbar {
+    display: flex;
+    align-items: center;
+}
+
+.footer__logo {
+    width: 64px;
+    height: 44px;
+    margin-right: 40px;
+    @include imageBackground(no-repeat, cover, center);
+    background-image: url(../../img/footer-logo.svg);
+}
+
+.footer__navbar-list {
+    display: flex;
+}
+
+.footer__list-item {
+    margin-right: 40px;
+
+    &:last-child {
+        margin: 0;
+    }
+}
+
+.footer__item-link {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #414141;
+}
+
+.footer__contacts {
+    display: flex;
+    align-items: center;
+    grid-gap: 0 40px;
+}
+
+.footer__contacts-item {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 0 40px;
+}
+
+.footer__contacts-socials {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 0 16px;
+}
+
+.footer__socials-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.footer__contact-number {
+
+    a {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+        color: #414141;
+
+        span {
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+        }
+    }
+}
+
+.footer__end {
+    display: flex;
+    margin: 27px 0 0 auto;
+}
+
+.footer__end-text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #414141;
+}
+
+.footer__end-img {
+    width: 100px;
+    height: auto;
+    margin-left: 10px;
+}
+
+@media (max-width: 1024px) {
+    .footer__logo {
+        background-size: 100%;
+        margin-right: 20px;
+    }
+
+    .footer__navbar-list {
+        flex-wrap: wrap;
+    }
+
+    .footer__list-item {
+        margin-right: 20px;
+    }
+
+    .footer__item-link {
+        font-size: 10px;
+    }
+
+    .footer__contacts {
+        grid-gap: 0 20px;
+    }
+
+    .footer__contacts-socials {
+        grid-gap: 0 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer__body {
+        grid-template-columns: 1fr;
+        grid-gap: 20px 0;
+    }
+
+    .footer__navbar {
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+
+    .footer__item-link {
+        font-size: 12px;
+    }
+
+    .footer__contacts {
+        justify-content: center;
+    }
+}

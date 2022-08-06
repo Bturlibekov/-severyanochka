@@ -1,0 +1,45 @@
+@import '../base/vars';
+@import '../base/mixins';
+
+body {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Rubik;
+}
+
+.main__page {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.cl-green {
+    color: $green
+}
+
+.bg-green {
+    background-color: $green;
+}
+
+.br-green {
+    border: 1px solid $green;
+}
+
+.cl-orange {
+    color: $orange
+}
+
+.bg-orange {
+    background-color: $orange;
+}
+
+.br-orange {
+    border: 1px solid $orange;
+}
+
+@import "./scroll";

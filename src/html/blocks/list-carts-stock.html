@@ -1,0 +1,27 @@
+<div class="list__carts __stock">
+    <div class="container">
+        <div class="list__carts-header">
+            <h3 class="list__carts-title">Акции</h3>
+            <a href="#" class="list__carts-link">
+                <p>Все акции</p>
+                <span class="icon-chevron"></span>
+            </a>
+        </div>
+        <div class="list__carts-row __stock">
+            @@include("../blocks/item-carts.html", { img: "01", discount: "50", priceCart: "44,50",
+            priceCommon:
+            "50,50", name: "Г/Ц Блинчики с мясом вес, Россия", })
+
+            @@include("../blocks/item-carts.html", { img: "02", discount: "50", priceCart: "44,50",
+            priceCommon:
+            "50,50", name: "Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...", })
+
+            @@include("../blocks/item-carts.html", { img: "03", discount: "50", priceCart: "44,50",
+            priceCommon:
+            "50,50", name: "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...", })
+
+            @@include("../blocks/item-carts.html", { img: "04", discount: "50", priceCart: "44,50", priceCommon:
+            "50,50", name: "Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...", })
+        </div>
+    </div>
+</div>
